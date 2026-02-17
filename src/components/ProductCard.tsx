@@ -12,7 +12,7 @@ const ProductCard = ({ product }: { product: Product }) => (
       />
     </div>
     <h3 className="text-sm font-medium tracking-wide">{product.name}</h3>
-    <p className="text-sm text-muted-foreground mt-1">${product.price}</p>
+    <p className="text-sm text-muted-foreground mt-1">₹{product.price}</p>
   </Link>
 );
 
