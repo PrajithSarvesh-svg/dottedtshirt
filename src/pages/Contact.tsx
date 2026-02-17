@@ -18,7 +18,7 @@ const Contact = () => (
         <MapPin className="h-5 w-5 mt-0.5 text-muted-foreground" />
         <div>
           <h3 className="text-sm font-medium mb-1">Studio</h3>
-          <p className="text-sm text-muted-foreground">123 Fashion Ave, New York, NY 10001</p>
+          <p className="text-sm text-muted-foreground">44/4, District Fund Rd, behind Big Bazaar, Kottapalya, Jayanagara</p>
         </div>
       </div>
     </div>
