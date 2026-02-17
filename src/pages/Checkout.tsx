@@ -165,7 +165,7 @@ const Checkout = () => {
             disabled={loading}
           >
             {loading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
-            Place Order — ${total}
+            Place Order — ₹{total}
           </Button>
         </form>
 
@@ -176,18 +176,18 @@ const Checkout = () => {
             {items.map((item) => (
               <div key={`${item.productId}-${item.size}`} className="flex justify-between text-sm">
                 <span>{item.name} ({item.size}) × {item.quantity}</span>
-                <span>${item.price * item.quantity}</span>
+                <span>₹{item.price * item.quantity}</span>
               </div>
             ))}
           </div>
           <div className="border-t border-border pt-4 space-y-2">
             <div className="flex justify-between text-sm">
               <span className="text-muted-foreground">Shipping</span>
-              <span>{shipping === 0 ? "Free" : `$${shipping}`}</span>
+              <span>{shipping === 0 ? "Free" : `₹${shipping}`}</span>
             </div>
             <div className="flex justify-between font-medium">
               <span>Total</span>
-              <span>${total}</span>
+              <span>₹{total}</span>
             </div>
           </div>
         </div>
