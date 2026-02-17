@@ -76,11 +76,11 @@ const Cart = () => {
           </div>
           <div className="flex justify-between text-sm mb-6">
             <span className="text-muted-foreground">Shipping</span>
-            <span>{totalPrice >= 100 ? "Free" : "₹10"}</span>
+            <span>{totalPrice >= 1000 ? "Free" : "₹100"}</span>
           </div>
           <div className="border-t border-border pt-4 flex justify-between font-medium mb-6">
             <span>Total</span>
-            <span>₹{totalPrice >= 100 ? totalPrice : totalPrice + 10}</span>
+            <span>₹{totalPrice >= 1000 ? totalPrice : totalPrice + 100}</span>
           </div>
           <Link to="/checkout">
             <Button className="w-full rounded-none tracking-widest uppercase text-xs font-medium" size="lg">

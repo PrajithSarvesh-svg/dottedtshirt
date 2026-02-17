@@ -25,7 +25,7 @@ const Checkout = () => {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [form, setForm] = useState({ name: "", email: "", phone: "", address: "" });
 
-  const shipping = totalPrice >= 100 ? 0 : 10;
+  const shipping = totalPrice >= 1000 ? 0 : 100;
   const total = totalPrice + shipping;
 
   if (items.length === 0 && !success) {
