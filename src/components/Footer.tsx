@@ -27,7 +27,7 @@ const Footer = () => (
         <div>
           <h4 className="text-xs font-medium tracking-widest uppercase mb-4">Info</h4>
           <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-            <span>Free shipping over $100</span>
+            <span>Free shipping over ₹1000</span>
             <span>30-day returns</span>
             <span>hello@dotted.com</span>
           </div>
